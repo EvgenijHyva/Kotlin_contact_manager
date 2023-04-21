@@ -15,3 +15,7 @@
 local.properties
 .idea
 gradle
+wrapper
+daemon
+caches
+native
