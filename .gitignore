@@ -19,3 +19,7 @@ wrapper
 daemon
 caches
 native
+android
+android.lock
+.tmp
+kotlin-profile
