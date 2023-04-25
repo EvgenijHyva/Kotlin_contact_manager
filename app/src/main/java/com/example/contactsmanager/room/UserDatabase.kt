@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database(entities = [User::class], version = 1)
-abstract class UserDatabase : RoomDatabase() {
+public abstract class UserDatabase : RoomDatabase() {
     abstract val userDAO: UserDAO
 
     // singleton

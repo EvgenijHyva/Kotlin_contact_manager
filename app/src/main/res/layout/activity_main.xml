@@ -6,7 +6,7 @@
     <data>
         <variable
             name="userViewModel"
-            type="com.example.contactsmanager.ViewModel.UserViewModel" />
+            type="com.example.contactsmanager.viewModel.UserViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,7 +50,7 @@
 
 
             <Button
-                android:onClick="@={() -> userViewModel.saveOrUpdate() }"
+                android:onClick="@{() -> userViewModel.saveOrUpdate() }"
                 android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:onClick="@={() -> userViewModel.clearAllOrDelete() }"
+                android:onClick="@{() -> userViewModel.clearAllOrDelete() }"
                 android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

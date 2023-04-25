@@ -1,4 +1,4 @@
-package com.example.contactsmanager.ViewModel
+package com.example.contactsmanager.viewModel
 
 import androidx.databinding.Bindable
 import androidx.databinding.Observable
@@ -31,6 +31,7 @@ class UserViewModel (private val repository: UserRepository): ViewModel(), Obser
 
     fun saveOrUpdate() {
         if (isUpdateOrDelete) {
+            // updates
             userToUpdateOrDelete.name  = inputName.value!!
             userToUpdateOrDelete.email = inputEmail.value!!
 

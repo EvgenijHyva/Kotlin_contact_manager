@@ -2,14 +2,13 @@ package com.example.contactsmanager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Display
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.contactsmanager.ViewModel.UserViewModel
-import com.example.contactsmanager.ViewModel.UserViewModelFactory
+import com.example.contactsmanager.viewModel.UserViewModel
+import com.example.contactsmanager.viewModel.UserViewModelFactory
 import com.example.contactsmanager.databinding.ActivityMainBinding
 import com.example.contactsmanager.room.User
 import com.example.contactsmanager.room.UserDatabase
