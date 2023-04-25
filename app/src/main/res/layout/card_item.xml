@@ -10,6 +10,7 @@
         app:cardBackgroundColor="@color/teal_200">
 
         <LinearLayout
+            android:id="@+id/listItemLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
