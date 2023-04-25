@@ -2,6 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="userViewModel"
+            type="com.example.contactsmanager.ViewModel.UserViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -23,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:hint="Enter your name "
-
+                android:text="@={userViewModel.inputName}"
                 app:layout_constraintBottom_toTopOf="@+id/emailET"
                 app:layout_constraintEnd_toEndOf="@+id/emailET"
                 app:layout_constraintStart_toStartOf="@+id/emailET"
@@ -38,6 +44,7 @@
                 android:layout_marginStart="36dp"
                 android:layout_marginBottom="20dp"
                 android:hint="Enter your email "
+                android:text="@={userViewModel.inputEmail}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -47,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:text="Save"
+                android:text="@={userViewModel.saveOrUpdateButtonText}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.527"
                 app:layout_constraintStart_toEndOf="@+id/nameET"
@@ -58,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="43dp"
-                android:text="Delete"
+                android:text="@={userViewModel.clearAllOrDeleteButtonText}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.531"
