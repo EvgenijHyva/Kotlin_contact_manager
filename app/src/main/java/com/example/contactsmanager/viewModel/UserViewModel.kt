@@ -89,7 +89,8 @@ class UserViewModel (private val repository: UserRepository): ViewModel(), Obser
         inputEmail.value = user.email
         isUpdateOrDelete = true
         saveOrUpdateButtonText.value = "Update"
-        saveOrUpdateButtonText.value = "Delete"
+        clearAllOrDeleteButtonText.value = "Delete"
+        userToUpdateOrDelete = user
     }
 
     override fun addOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {
